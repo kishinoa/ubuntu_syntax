@@ -2,6 +2,7 @@
 touch myscript.sh
 nano myscript.sh
 echo "hello world"
+# 실행 권한 부여
 chmod u+x myscript.sh
 # 스크립트 실행
 ./myscript.sh
@@ -66,7 +67,7 @@ file_count=0
 dir_count=0
 for a in *
 do
-    if [ -f ]; then
+    if [ -f $a ]; then
         let file_count=file_count+1
     else
         let dir_count=dir_count+1
